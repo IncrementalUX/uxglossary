@@ -1,5 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .browsehappy {
@@ -11,8 +12,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -88,4 +94,23 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+
+// Card module
+.glossary-stack {
+  list-style: none;
+}
+
+.card {
+  float: left;
+  display: block;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border: 1px solid #000;
+  margin: 1em;
+  border-radius: 4px;
+  padding: 1em;
+  overflow: hidden;
 }

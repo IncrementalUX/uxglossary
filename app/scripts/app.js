@@ -15,13 +15,22 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/glossary', {
+        templateUrl: 'views/glossary.html',
+        controller: 'GlossaryCtrl'
+      })
+      .when('/glossary/:id', {
+        templateUrl: 'views/detail.html',
+        controller: 'DetailCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
