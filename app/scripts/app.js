@@ -30,7 +30,8 @@ angular
       })
       .when('/glossary/:id', {
         templateUrl: 'views/detail.html',
-        controller: 'DetailCtrl'
+        controller: 'DetailCtrl',
+        controllerAs: 'detail'
       })
       .when('/about', {
         templateUrl: 'views/about.html',

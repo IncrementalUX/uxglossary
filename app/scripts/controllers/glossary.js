@@ -1,5 +1,5 @@
 'use strict';
-
+/*global Firebase */
 /**
  * @ngdoc function
  * @name uxglossaryApp.controller:GlossaryCtrl
