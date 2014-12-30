@@ -1,13 +1,10 @@
-<div class="clearfix">
-  <label for="search-items">Search</label>
-  <input type="search" ng-model="searchText">
+<div class="search clearfix">
+  <input type="search" ng-model="searchText" class="searchbox" placeholder="Search">
 </div>
 
 <ul class="glossary-stack">
   <li ng-repeat="item in glossaryItems | filter: searchText" class="card" ng-click="goToItem(item.id)">
       <h4 class="card--title">{{item.title}}</h4>
-      <p class="card--description">{{item.description}}</p>
-      <p class="card--categories"><strong><em>Categories: </em></strong>{{item.category}}</p>
   </li>
 </ul>
 

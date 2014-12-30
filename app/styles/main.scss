@@ -32,7 +32,6 @@ h1, h2, h3, h4 {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -106,14 +105,12 @@ h1, h2, h3, h4 {
 .card {
   float: left;
   display: block;
-  width: 250px;
-  height: 250px;
-  background: white;
-  border: 1px solid #000;
+  border-bottom: 1px dotted transparent;
   margin: 1em;
-  border-radius: 4px;
-  padding: 1em;
-  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 1px dotted #000;
+  }
 }
 
 // Boorstrap Overrides
@@ -126,4 +123,17 @@ h1, h2, h3, h4 {
 .nav > li > a:hover, .nav > li > a:focus {
   background: white;
   border-bottom: 1px dotted #000;
+}
+
+.search {
+  text-align: center;
+}
+
+.searchbox {
+  background: #222;
+  padding: .8em;
+  border: 0;
+  border-radius: 4px;
+  width: 40%;
+  min-width: 320px;
 }
